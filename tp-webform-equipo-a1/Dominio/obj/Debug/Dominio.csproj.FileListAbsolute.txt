@@ -1,0 +1,6 @@
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\bin\Debug\Dominio.dll
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\bin\Debug\Dominio.pdb
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\obj\Debug\Dominio.dll
+D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Dominio\obj\Debug\Dominio.pdb
