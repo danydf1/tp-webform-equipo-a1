@@ -57,3 +57,7 @@ D:\utn\2024\tp-webform-equipo-a1\tp-webform-equipo-a1\tp-webform-equipo-a1\obj\D
 D:\utn\2024\tp-webform-equipo-a1\tp-webform-equipo-a1\tp-webform-equipo-a1\obj\Debug\tp-webfo.3B395D0F.Up2Date
 D:\utn\2024\tp-webform-equipo-a1\tp-webform-equipo-a1\tp-webform-equipo-a1\obj\Debug\tp-webform-equipo-a1.dll
 D:\utn\2024\tp-webform-equipo-a1\tp-webform-equipo-a1\tp-webform-equipo-a1\obj\Debug\tp-webform-equipo-a1.pdb
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\tp-webform-equipo-a1\bin\Dominio.dll
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\tp-webform-equipo-a1\bin\Negocio.dll
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\tp-webform-equipo-a1\bin\Dominio.pdb
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\tp-webform-equipo-a1\bin\Negocio.pdb

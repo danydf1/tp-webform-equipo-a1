@@ -7,3 +7,12 @@ D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Negocio\obj\Debug\Negocio.c
 D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Negocio\obj\Debug\Negocio.csproj.Up2Date
 D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Negocio\obj\Debug\Negocio.dll
 D:\utn\2024\UTN-PROG3-TP2-WinForms\Prog3 TP2 WinForm\Negocio\obj\Debug\Negocio.pdb
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\bin\Debug\Negocio.dll
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\bin\Debug\Negocio.pdb
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\bin\Debug\Dominio.dll
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\bin\Debug\Dominio.pdb
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.dll
+D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.pdb
