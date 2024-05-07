@@ -7,15 +7,13 @@ namespace Negocio
 {
     public class ArticuloNegocio
     {
-
-
         public List<Articulo> Listar()
         {
             AccesoDatos accesoDatos = new AccesoDatos();
             List<Articulo> lstArticulo = new List<Articulo>();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
-            accesoDatos.setearConsulta("select A.Id, A.Codigo, A.Nombre, A.Descripcion,C.Id 'IdCategoria',C.Descripcion 'Categoria',M.Id 'IdMarca',M.Descripcion 'Marca',A.Precio from ARTICULOS A join CATEGORIAS C on C.Id = A.IdCategoria join MARCAS M on M.Id = A.IdMarca");
+            accesoDatos.setearSP("sp_Listar");
 
             try
             {
@@ -98,7 +96,7 @@ namespace Negocio
                 List<Imagen> imagenesViejas = imagenNegocio.listar(articulo.Id);
                 foreach (Imagen imagenvieja in imagenesViejas)
                 {
-                    if(!articulo.Imagenes.Any(X=>X.Id==imagenvieja.Id))
+                    if (!articulo.Imagenes.Any(X => X.Id == imagenvieja.Id))
                     {
                         imagenNegocio.Eliminar(imagenvieja.Id);
                     }
@@ -106,7 +104,7 @@ namespace Negocio
 
                 foreach (Imagen imagen in articulo.Imagenes)
                 {
-                    if(imagen.Id==0)
+                    if (imagen.Id == 0)
                         imagenNegocio.Agregar(imagen);
                     else
                         imagenNegocio.Editar(imagen);
