@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|d:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|solutionrelative:tp-webform-equipo-a1\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|d:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|solutionrelative:tp-webform-equipo-a1\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|d:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|solutionrelative:tp-webform-equipo-a1\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|solutionrelative:tp-webform-equipo-a1\\master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}|Negocio\\Negocio.csproj|D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}|Negocio\\Negocio.csproj|D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F34A0CEA-ECEE-42BA-BD63-B6610C7E440C}|tp-webform-equipo-a1\\tp-webform-equipo-a1.csproj|solutionrelative:tp-webform-equipo-a1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Index.aspx.cs",
+              "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx.cs",
+              "RelativeDocumentMoniker": "tp-webform-equipo-a1\\Index.aspx.cs",
+              "ToolTip": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx.cs",
+              "RelativeToolTip": "tp-webform-equipo-a1\\Index.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T21:40:12.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Master.Master",
               "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Master.Master",
               "RelativeDocumentMoniker": "tp-webform-equipo-a1\\Master.Master",
@@ -55,11 +64,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.aspx",
-              "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\TP-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx",
+              "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx",
               "RelativeDocumentMoniker": "tp-webform-equipo-a1\\Index.aspx",
-              "ToolTip": "D:\\utn\\2024\\tp-webform-equipo-a1\\TP-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx",
+              "ToolTip": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Index.aspx",
               "RelativeToolTip": "tp-webform-equipo-a1\\Index.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -68,32 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Web.config",
-              "RelativeDocumentMoniker": "tp-webform-equipo-a1\\Web.config",
-              "ToolTip": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Web.config",
-              "RelativeToolTip": "tp-webform-equipo-a1\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-06T23:02:27.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
-              "ToolTip": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T22:56:48.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AccesoDatos.cs",
               "DocumentMoniker": "D:\\utn\\2024\\tp-webform-equipo-a1\\tp-webform-equipo-a1\\Negocio\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
