@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB", "DB\DB.sqlproj", "{076AB74F-3545-45DA-9C53-E08B24694B3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F29E0CB-2DBA-4DB9-A44A-623A3755EB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076AB74F-3545-45DA-9C53-E08B24694B3D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
