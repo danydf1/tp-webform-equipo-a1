@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <%if (LstCarrito != null)
+        <%if (Carrito != null)
             { %>
         <div class="row">
             <div class="col-12">
@@ -20,29 +20,31 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%foreach (var item in Carrito.Items)
+                            {%>
                         <tr>
-                            <%foreach (var item in LstCarrito)
-                                {%>
+
                             <th scope="row">
                                 <div class="d-flex flex-row mb-2 justify-content-between">
-                                    <img src="<%: item.Imagenes.First().ImagenUrl %>" alt="Alternate Text" class="p-2" />
-                                    <p class="p-2"><%: item.Nombre%></p>
+                                    <img src="<%: item.Articulo.Imagenes.First().ImagenUrl %>" alt="Alternate Text" class="p-2" />
+                                    <p class="p-2"><%: item.Articulo.Nombre%></p>
                                 </div>
                             </th>
                             <td>
-                                <p class="p-2"><%: item.Precio%></p>
+                                <p class="p-2"><%: item.Articulo.Precio%></p>
                             </td>
                             <td>
-                                <input type="number" min="1" />
+                                <input type="number" min="1" value="<%: item.Cantidad%>" />
                             </td>
                             <td>
-                                <p class="p-2"><%: item.Precio%></p>
+                                <p class="p-2"><%: item.SubTotal%></p>
                             </td>
                             <td>
                                 <button title="Quitar">X</button>
                             </td>
-                            <% } %>
+
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
 
