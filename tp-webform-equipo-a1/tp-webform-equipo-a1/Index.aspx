@@ -7,19 +7,28 @@
     <div class="container">
         <div class="row">
 
-            <%foreach (Dominio.Articulo item in lstArticulo)
-                {%>
-                <div class="col-4 mb-2">
-                    <div class="card" style="width: 18rem;;">
-                        <img src="<%= item.Imagenes.Count > 0 ? item.Imagenes.First().ImagenUrl : "" %>" width="286" heigth="286" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><%= item.Nombre%></h5>
-                            <p class="card-text"><%= item.Descripcion%></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <asp:Repeater runat="server" ID="repetidor">
+                <ItemTemplate>
+                    <div class="col-4 mb-2 ">
+                        <div class="card" style="width: 18rem;">
+                            <%--<img src="<%= item.Imagenes.Count > 0 ? item.Imagenes.First().ImagenUrl : "" %>" width="286" heigth="286" class="card-img-top img-fluid" alt="...">--%>
+                            <div class="card-body">
+                                <h5 class="card-title"><%# Eval("Nombre")%></h5>
+                                <p class="card-text"><%# Eval("Descripcion")%></p>
+                                <div class="row justify-content-evenly">
+                                    <div class="col-4">
+                                        <asp:Button ID="BtnDetalle" Text="Detalle" CssClass="btn btn-secondary mr-3" runat="server" />
+                                    </div>
+                                    <div class="col-4">
+                                        <asp:Button ID="btnAgregar" Text="Agregar" CssClass="btn btn-secondary" runat="server" OnClick="btnAgregar_Click" CommandArgument='<%#Eval("Id") %>' CommandName="IdArticulo" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <% } %>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
     </div>
 
