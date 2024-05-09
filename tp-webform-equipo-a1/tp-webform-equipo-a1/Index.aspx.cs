@@ -31,6 +31,7 @@ namespace tp_webform_equipo_a1
             lstArticulo = articuloNegocio.Listar();
             if (!IsPostBack)
             {
+
                 repetidor.DataSource = lstArticulo;
                 repetidor.DataBind();
             }
