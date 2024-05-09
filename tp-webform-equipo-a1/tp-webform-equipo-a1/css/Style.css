@@ -1,4 +1,9 @@
 ﻿:root {
     color-scheme: light dark;
-    background-color:dimgrey
 }
+
+
+ .txtCantidad{
+    width: 5% ;
+}
+

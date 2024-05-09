@@ -31,8 +31,8 @@
                                     <td>
                                         <p class="p-2"><%# Eval("Articulo.Precio")%></p>
                                     </td>
-                                    <td>
-                                        <asp:TextBox ID="txtCantidad" type="number" min="1" value='<%#Eval("Cantidad")%>' runat="server" OnTextChanged="txtCantidad_TextChanged"></asp:TextBox>
+                                    <td class="txtCantidad">
+                                        <asp:TextBox CssClass="form-control " ID="txtCantidad" TextMode="Number" Text='<%#Eval("Cantidad")%>' AutoPostBack="true" runat="server"  OnTextChanged="txtCantidad_TextChanged" tooltip='<%# Eval("Articulo.Id")%>' min="0" />
                                     </td>
                                     <td>
                                         <p class="p-2"><%# Eval("Subtotal")%></p>
@@ -45,7 +45,7 @@
                         </asp:Repeater>
                     </tbody>
                 </table>
-
+                <asp:Label ID="lblCantidad" runat="server" Visible="false"></asp:Label>
             </div>
         </div>
         <div class="row">
@@ -62,19 +62,19 @@
         <% }
             else
             {%><div class="row">
-               <div class="col-12">
-                   <h1>No hay Articulos en el carrito</h1>
-               </div>
-           </div>
+                <div class="col-12">
+                    <h1>No hay Articulos en el carrito</h1>
+                </div>
+            </div>
         <% } %>
         <% }
             else
             {%>
-            <div class="row h-100">
-                <div class="col-12 ">
-                    <h1>No hay Articulos en el carrito</h1>
-                </div>
+        <div class="row h-100">
+            <div class="col-12 ">
+                <h1>No hay Articulos en el carrito</h1>
             </div>
+        </div>
         <% } %>
     </div>
 </asp:Content>
