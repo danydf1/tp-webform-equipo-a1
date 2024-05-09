@@ -47,11 +47,24 @@ namespace tp_webform_equipo_a1
 
             repetidor.DataSource = Carrito.Items;
             repetidor.DataBind();
+
         }
 
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
+            if (Convert.ToInt32(((TextBox)sender).Text) > 0)
+            {
+                lblCantidad.Text = ((TextBox)sender).Text;
+                int cantidad = Convert.ToInt32(((TextBox)sender).Text);
+                var Item = Carrito.Items.Find(x => x.Articulo.Id == Convert.ToInt32(((TextBox)sender).ToolTip));
+                Item.Cantidad = cantidad;
+                Item.SubTotal = Item.Articulo.Precio * cantidad;
 
+                Session.Add("Carrito", Carrito);
+
+                repetidor.DataSource = Carrito.Items;
+                repetidor.DataBind();
+            }
         }
     }
 }
