@@ -1,18 +1,57 @@
 ﻿using Dominio;
 using System;
-using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace tp_webform_equipo_a1
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        public List<Articulo> LstCarrito { set; get; }
+        public Carrito Carrito { set; get; }
+        public decimal Total
+        {
+            get
+            {
+                if (Carrito != null)
+                {
+                    return Carrito.totalCarrito(Carrito);
+                }
+                else
+                {
+                    return 0;
+                }
+
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Carrito"] != null)
             {
-                LstCarrito = (List<Articulo>)Session["Carrito"];
+                Carrito = (Carrito)Session["Carrito"];
+                if (!IsPostBack)
+                {
+                    repetidor.DataSource = Carrito.Items;
+                    repetidor.DataBind();
+                }
             }
+        }
+
+        protected void BtnQuitar_Click(object sender, EventArgs e)
+        {
+            ItemCarrito itemSeleccionado = new ItemCarrito();
+            var IdArticulo = ((Button)sender).CommandArgument;
+
+            itemSeleccionado = Carrito.Items.Find(x => x.Articulo.Codigo == IdArticulo);
+
+            Carrito.Items.Remove(itemSeleccionado);
+            Session.Add("Carrito", Carrito);
+
+            repetidor.DataSource = Carrito.Items;
+            repetidor.DataBind();
+        }
+
+        protected void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

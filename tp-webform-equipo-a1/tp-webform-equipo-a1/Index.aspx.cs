@@ -10,15 +10,28 @@ namespace tp_webform_equipo_a1
     {
         public List<Articulo> lstArticulo { get; set; }
         public List<Imagen> lstImagenes { get; set; }
+        public Carrito carrito;
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
+            carrito = (Carrito)Session["carrito"];
+
+            if (carrito == null)
+            {
+                carrito = new Carrito();
+
+                if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
+            }
+
             lstImagenes = imagenNegocio.listar();
             lstArticulo = articuloNegocio.Listar();
             if (!IsPostBack)
             {
+
                 repetidor.DataSource = lstArticulo;
                 repetidor.DataBind();
             }
@@ -27,10 +40,17 @@ namespace tp_webform_equipo_a1
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
+            ItemCarrito itemCarrito = new ItemCarrito();
 
             string IdArticulo = ((Button)sender).CommandArgument;
 
-            Session.Add("Carrito", lstArticulo.FindAll(x => x.Id == Convert.ToInt32(IdArticulo)));
+            itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
+            itemCarrito.Cantidad = 1;
+            itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
+
+            carrito.Items.Add(itemCarrito);
+
+            Session.Add("Carrito", carrito);
         }
     }
 }

@@ -4,7 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <%if (LstCarrito != null)
+        <%if (Carrito != null || Total > 0)
+            { %>
+        <%if (Carrito.Items.Count > 0)
             { %>
         <div class="row">
             <div class="col-12">
@@ -20,29 +22,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <%foreach (var item in LstCarrito)
-                                {%>
-                            <th scope="row">
-                                <div class="d-flex flex-row mb-2 justify-content-between">
-                                    <img src="<%: item.Imagenes.First().ImagenUrl %>" alt="Alternate Text" class="p-2" />
-                                    <p class="p-2"><%: item.Nombre%></p>
-                                </div>
-                            </th>
-                            <td>
-                                <p class="p-2"><%: item.Precio%></p>
-                            </td>
-                            <td>
-                                <input type="number" min="1" />
-                            </td>
-                            <td>
-                                <p class="p-2"><%: item.Precio%></p>
-                            </td>
-                            <td>
-                                <button title="Quitar">X</button>
-                            </td>
-                            <% } %>
-                        </tr>
+                        <asp:Repeater runat="server" ID="repetidor">
+                            <ItemTemplate>
+                                <tr>
+                                    <td>
+                                        <p class="p-2 text-center"><%#Eval("Articulo.Nombre")%></p>
+                                    </td>
+                                    <td>
+                                        <p class="p-2"><%# Eval("Articulo.Precio")%></p>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtCantidad" type="number" min="1" value='<%#Eval("Cantidad")%>' runat="server" OnTextChanged="txtCantidad_TextChanged"></asp:TextBox>
+                                    </td>
+                                    <td>
+                                        <p class="p-2"><%# Eval("Subtotal")%></p>
+                                    </td>
+                                    <td>
+                                        <asp:Button ID="BtnQuitar" Text="X" CssClass="btn btn-danger" runat="server" OnClick="BtnQuitar_Click" CommandArgument='<%#Eval("Articulo.Codigo")%>' CommandName="IdArticulo" />
+                                    </td>
+                                </tr>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </tbody>
                 </table>
 
@@ -52,23 +52,29 @@
             <div class="col-6"></div>
             <div class="col-6 d-flex align-items-end flex-column mb-3">
                 <div class="d-flex flex-row mb-3">
-                    <h5 class="p-2 g-col-6">SubTotal</h5>
-                    <p class="p-2 g-col-6">000</p>
                 </div>
                 <div class="d-flex flex-row mb-3 justify-content-between">
-                    <h5 class="p-2 g-col-6">Total</h5>
-                    <p class="p-2 g-col-6">000</p>
+                    <h4 class="p-2 g-col-6">Total</h4>
+                    <h5 class="p-2 g-col-6"><%: Total.ToString()%></h5>
                 </div>
             </div>
         </div>
         <% }
             else
+            {%><div class="row">
+               <div class="col-12">
+                   <h1>No hay Articulos en el carrito</h1>
+               </div>
+           </div>
+        <% } %>
+        <% }
+            else
             {%>
-        <div class="row">
-            <div class="col-12">
-                <h1>No hay Articulos en el carrito</h1>
+            <div class="row h-100">
+                <div class="col-12 ">
+                    <h1>No hay Articulos en el carrito</h1>
+                </div>
             </div>
-        </div>
         <% } %>
     </div>
 </asp:Content>
