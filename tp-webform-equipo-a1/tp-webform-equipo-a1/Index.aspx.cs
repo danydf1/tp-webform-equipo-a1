@@ -44,7 +44,7 @@ namespace tp_webform_equipo_a1
 
             string IdArticulo = ((Button)sender).CommandArgument;
 
-            if (carrito.Items.Count == 0)
+            if (!carrito.Items.Exists(x => x.Articulo.Id == Convert.ToInt32(IdArticulo)))
             {
                 itemCarrito = new ItemCarrito();
 
