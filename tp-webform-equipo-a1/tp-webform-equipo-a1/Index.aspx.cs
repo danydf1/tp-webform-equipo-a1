@@ -40,17 +40,34 @@ namespace tp_webform_equipo_a1
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            ItemCarrito itemCarrito = new ItemCarrito();
+            ItemCarrito itemCarrito;
 
             string IdArticulo = ((Button)sender).CommandArgument;
 
-            itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
-            itemCarrito.Cantidad = 1;
-            itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
+            if (carrito.Items.Count == 0)
+            {
+                itemCarrito = new ItemCarrito();
 
-            carrito.Items.Add(itemCarrito);
+                itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
+                itemCarrito.Cantidad = 1;
+                itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
 
-            Session.Add("Carrito", carrito);
+                carrito.Items.Add(itemCarrito);
+
+                Session.Add("Carrito", carrito);
+            }
+            else
+            {
+                int indexItem = carrito.Items.FindIndex(x => x.Articulo.Id == Convert.ToInt32(IdArticulo));
+                itemCarrito = carrito.Items.Find(x => x.Articulo.Id == Convert.ToInt32(IdArticulo));
+                itemCarrito.Cantidad += 1;
+                itemCarrito.SubTotal = itemCarrito.Articulo.Precio * itemCarrito.Cantidad;
+
+                carrito.Items[indexItem] = itemCarrito;
+
+                Session.Add("Carrito", carrito);
+            }
+
         }
     }
 }
