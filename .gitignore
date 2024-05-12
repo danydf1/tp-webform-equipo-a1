@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/tp-webform-equipo-a1/.vs
+/tp-webform-equipo-a1/tp-webform-equipo-a1/obj
+/tp-webform-equipo-a1/tp-webform-equipo-a1/bin

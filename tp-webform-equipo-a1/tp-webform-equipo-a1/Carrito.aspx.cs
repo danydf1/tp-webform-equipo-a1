@@ -48,6 +48,7 @@ namespace tp_webform_equipo_a1
             repetidor.DataSource = Carrito.Items;
             repetidor.DataBind();
 
+            Response.Redirect("~/Carrito.aspx");
         }
 
         protected void txtCantidad_TextChanged(object sender, EventArgs e)

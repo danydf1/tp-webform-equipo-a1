@@ -2,6 +2,7 @@
 using Negocio;
 using System;
 using System.Collections.Generic;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace tp_webform_equipo_a1
@@ -68,6 +69,7 @@ namespace tp_webform_equipo_a1
                 Session.Add("Carrito", carrito);
             }
 
+            Response.Redirect("~/Index.aspx"); 
         }
     }
 }

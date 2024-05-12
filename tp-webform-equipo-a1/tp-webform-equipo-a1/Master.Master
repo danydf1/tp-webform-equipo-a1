@@ -26,7 +26,9 @@
                                 <a class="nav-link active" aria-current="page" href="Index.aspx">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Carrito.aspx">Carrito</a>
+                                <a class="nav-link" href="Carrito.aspx">Carrito
+                                    <asp:Label ID="lblContador" class="badge text-bg-primary" runat="server">0</asp:Label>
+                                </a>
                             </li>
                         </ul>
                         <div class="d-flex" role="search">
