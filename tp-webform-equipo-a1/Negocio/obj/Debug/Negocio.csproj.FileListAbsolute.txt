@@ -16,3 +16,12 @@ D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.
 D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.Up2Date
 D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.dll
 D:\utn\2024\tp-webform-equipo-a1\TP-webform-equipo-a1\Negocio\obj\Debug\Negocio.pdb
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\bin\Debug\Negocio.dll
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\bin\Debug\Negocio.pdb
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\bin\Debug\Dominio.dll
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\bin\Debug\Dominio.pdb
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\obj\Debug\Negocio.dll
+D:\Google Drive\Mi unidad\00 - UTN TUP\3er Cuatrimestre\PROG3\C#\tp-webform-equipo-a1\tp-webform-equipo-a1\Negocio\obj\Debug\Negocio.pdb
