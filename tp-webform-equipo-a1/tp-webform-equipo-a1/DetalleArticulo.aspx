@@ -20,6 +20,12 @@
                         <a data-fslightbox="mygalley" class="border mx-1 rounded-2 item-thumb" data-type="image" href="#">
                             <img width="60" height="60" class="rounded-2" src="<%: img.ImagenUrl %>" />
                         </a>
+
+                        <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="asdsad">
+                            <img width="60" height="60" class="rounded-2" src="<%: img.ImagenUrl %>" />
+                        </asp:HyperLink>--%>
+
+
                         <%} %>
                     </div>
 
@@ -37,8 +43,8 @@
                                 <span class="ms-1">4.5
                                 </span>
                             </div>
-                            <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
-                            <span class="text-success ms-2">In stock</span>
+
+                            <span class="text-success ms-2">En Stock</span>
                         </div>
 
                         <div class="mb-3">
@@ -53,7 +59,7 @@
                         <div class="row">
                             <dt class="col-3">Marca</dt>
                             <dd class="col-9"><%: articuloSeleccionado.Marca %></dd>
-                            
+
                             <dt class="col-3">Categoria:</dt>
                             <dd class="col-9"><%: articuloSeleccionado.Categoria %></dd>
 
@@ -65,19 +71,18 @@
                         <div class="col-md-4 col-6 mb-3">
                             <label class="mb-2 d-block">Cantidad</label>
                             <div class="input-group mb-3" style="width: 170px;">
-                                <button class="btn btn-white border border-secondary px-3" type="button" id="btnRestar" data-mdb-ripple-color="dark">
-                                    -
-                                </button>
-                                <input type="text" class="form-control text-center border border-secondary" value="1" aria-label="Example text with button addon" aria-describedby="button-addon1" id="detalleCantidad"/>
-                                <button class="btn btn-white border border-secondary px-3" type="button" id="btnSumar" data-mdb-ripple-color="dark">
-                                    +
-                                </button>
+                                <asp:Button runat="server" Text="-" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnRestar" data-mdb-ripple-color="dark" OnClick="btnRestar_Click" />
+
+                                <asp:TextBox runat="server" Text="1" CssClass="form-control text-center border border-secondary" aria-label="Example text with button addon" aria-describedby="button-addon1" ID="detalleCantidad" />
+                                <asp:Button runat="server" Text="+" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnSumar" data-mdb-ripple-color="dark" OnClick="btnSumar_Click" />
                             </div>
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-primary shadow-0"><i class="me-1 fa fa-shopping-basket"></i>Agregar Al Carrito</a>
-                    <a href="/index.aspx" class="btn btn-warning shadow-0">Volver</a>
+
+                    <asp:Button Text="Agregar al Carrito" ID="btnAgregarCarrito" runat="server" CssClass="btn btn-primary shadow-0" OnClick="btnAgregarCarrito_Click" />
+
+                    <a href="/index.aspx" class="btn btn-danger shadow-0">Volver</a>
                 </main>
             </div>
         </div>
