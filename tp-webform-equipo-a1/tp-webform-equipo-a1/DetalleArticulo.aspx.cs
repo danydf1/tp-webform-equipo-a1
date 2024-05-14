@@ -45,15 +45,22 @@ namespace tp_webform_equipo_a1
         protected void btnSumar_Click(object sender, EventArgs e)
         {
             int cant = int.Parse(detalleCantidad.Text);
-            cant += 1;
-            detalleCantidad.Text = cant.ToString();
+
+            if (cant < 50)
+            {
+                cant += 1;
+                detalleCantidad.Text = cant.ToString();
+            }
         }
 
         protected void btnRestar_Click(object sender, EventArgs e)
         {
             int cant = int.Parse(detalleCantidad.Text);
-            cant -= 1;
-            detalleCantidad.Text = cant.ToString();
+            if (cant > 0)
+            {
+                cant -= 1;
+                detalleCantidad.Text = cant.ToString();
+            }
         }
 
         protected void btnAgregarCarrito_Click(object sender, EventArgs e)
@@ -67,7 +74,7 @@ namespace tp_webform_equipo_a1
                 itemCarrito = new ItemCarrito();
 
                 itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
-                itemCarrito.Cantidad = int.Parse(detalleCantidad.Text); 
+                itemCarrito.Cantidad = int.Parse(detalleCantidad.Text);
                 itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
 
                 carrito.Items.Add(itemCarrito);

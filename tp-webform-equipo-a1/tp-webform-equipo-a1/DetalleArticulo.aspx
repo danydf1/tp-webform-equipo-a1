@@ -20,12 +20,6 @@
                         <a data-fslightbox="mygalley" class="border mx-1 rounded-2 item-thumb" data-type="image" href="#">
                             <img width="60" height="60" class="rounded-2" src="<%: img.ImagenUrl %>" />
                         </a>
-
-                        <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="asdsad">
-                            <img width="60" height="60" class="rounded-2" src="<%: img.ImagenUrl %>" />
-                        </asp:HyperLink>--%>
-
-
                         <%} %>
                     </div>
 
@@ -71,7 +65,7 @@
                         <div class="col-md-4 col-6 mb-3">
                             <label class="mb-2 d-block">Cantidad</label>
                             <div class="input-group mb-3" style="width: 170px;">
-                                <asp:Button runat="server" Text="-" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnRestar" data-mdb-ripple-color="dark" OnClick="btnRestar_Click" />
+                                <asp:Button runat="server" Text="-" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnRestar" data-mdb-ripple-color="dark" OnClick="btnRestar_Click"/>
 
                                 <asp:TextBox runat="server" Text="1" CssClass="form-control text-center border border-secondary" aria-label="Example text with button addon" aria-describedby="button-addon1" ID="detalleCantidad" />
                                 <asp:Button runat="server" Text="+" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnSumar" data-mdb-ripple-color="dark" OnClick="btnSumar_Click" />
@@ -80,7 +74,7 @@
                     </div>
 
 
-                    <asp:Button Text="Agregar al Carrito" ID="btnAgregarCarrito" runat="server" CssClass="btn btn-primary shadow-0" OnClick="btnAgregarCarrito_Click" />
+                    <asp:Button Text="Agregar al Carrito" ID="btnAgregarCarrito" runat="server" CssClass="btn btn-primary shadow-0" OnClick="btnAgregarCarrito_Click"/>
 
                     <a href="/index.aspx" class="btn btn-danger shadow-0">Volver</a>
                 </main>
