@@ -42,10 +42,10 @@
                                 <p class="card-text"><%# Eval("Descripcion")%></p>
                                 <div class="row justify-content-evenly">
                                     <div class="col-4">
-                                        <a href="/DetalleArticulo.aspx?id=<%# Eval("id") %>" class="btn btn-dark mr-3" />Detalle </a>
+                                        <a href="/DetalleArticulo.aspx?id=<%# Eval("id") %>" class="btn btn-secondary mr-3" />Detalle </a>
                                     </div>
                                     <div class="col-4">
-                                        <asp:Button ID="btnAgregar" Text="Agregar" CssClass="btn btn-dark" runat="server" OnClick="btnAgregar_Click" CommandArgument='<%#Eval("Id") %>' CommandName="IdArticulo" />
+                                        <asp:Button ID="btnAgregar" Text="Agregar" CssClass="btn btn-secondary" runat="server" OnClick="btnAgregar_Click" CommandArgument='<%#Eval("Id") %>' CommandName="IdArticulo" />
                                     </div>
                                 </div>
                             </div>
