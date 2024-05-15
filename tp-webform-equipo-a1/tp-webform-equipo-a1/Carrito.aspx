@@ -12,7 +12,7 @@
             <div class="col-12">
 
                 <table class="table table-striped table-secondary text-center">
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">Producto</th>
                             <th scope="col">Precio</th>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="d-flex flex-row mb-3 justify-content-between">
                     <h4 class="p-2 g-col-6">Total</h4>
-                    <h5 class="p-2 g-col-6">$<%: Total.ToString()%></h5>
+                    <h5 class="p-2 g-col-6 fs-4">$<%: Total.ToString()%></h5>
                 </div>
             </div>
         </div>
