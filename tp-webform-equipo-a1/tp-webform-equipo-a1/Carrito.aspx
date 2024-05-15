@@ -29,13 +29,13 @@
                                         <p class="p-2 text-center"><%#Eval("Articulo.Nombre")%></p>
                                     </td>
                                     <td>
-                                        <p class="p-2"><%# Eval("Articulo.Precio")%></p>
+                                        <p class="p-2">$<%# Eval("Articulo.Precio")%></p>
                                     </td>
                                     <td class="txtCantidad">
                                         <asp:TextBox CssClass="form-control " ID="txtCantidad" TextMode="Number" Text='<%#Eval("Cantidad")%>' AutoPostBack="true" runat="server"  OnTextChanged="txtCantidad_TextChanged" tooltip='<%# Eval("Articulo.Id")%>' min="0" />
                                     </td>
                                     <td>
-                                        <p class="p-2"><%# Eval("Subtotal")%></p>
+                                        <p class="p-2">$<%# Eval("Subtotal")%></p>
                                     </td>
                                     <td>
                                         <asp:Button ID="BtnQuitar" Text="X" CssClass="btn btn-danger" runat="server" OnClick="BtnQuitar_Click" CommandArgument='<%#Eval("Articulo.Codigo")%>' CommandName="IdArticulo" />
@@ -55,7 +55,7 @@
                 </div>
                 <div class="d-flex flex-row mb-3 justify-content-between">
                     <h4 class="p-2 g-col-6">Total</h4>
-                    <h5 class="p-2 g-col-6"><%: Total.ToString()%></h5>
+                    <h5 class="p-2 g-col-6">$<%: Total.ToString()%></h5>
                 </div>
             </div>
         </div>
