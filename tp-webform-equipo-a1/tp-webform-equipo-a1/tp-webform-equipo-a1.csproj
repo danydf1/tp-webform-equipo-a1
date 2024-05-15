@@ -68,12 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Style.css" />
+    <Content Include="DetalleArticulo.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="scripts\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Carrito.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleArticulo.aspx.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleArticulo.aspx.designer.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

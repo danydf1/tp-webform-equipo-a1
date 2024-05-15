@@ -2,6 +2,7 @@
 using Negocio;
 using System;
 using System.Collections.Generic;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace tp_webform_equipo_a1
@@ -50,7 +51,7 @@ namespace tp_webform_equipo_a1
 
                 itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
                 itemCarrito.Cantidad = 1;
-                itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
+                itemCarrito.SubTotal = itemCarrito.Articulo.Precio * itemCarrito.Cantidad;
 
                 carrito.Items.Add(itemCarrito);
 
@@ -68,6 +69,7 @@ namespace tp_webform_equipo_a1
                 Session.Add("Carrito", carrito);
             }
 
+            Response.Redirect("~/Index.aspx"); 
         }
     }
 }

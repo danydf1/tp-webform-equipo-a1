@@ -11,43 +11,43 @@ namespace tp_webform_equipo_a1
 {
 
 
-    public partial class Site1
+    public partial class DetalleArticulo
     {
 
         /// <summary>
-        /// Control head.
+        /// Control btnRestar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Button btnRestar;
 
         /// <summary>
-        /// Control form1.
+        /// Control detalleCantidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox detalleCantidad;
 
         /// <summary>
-        /// Control lblContador.
+        /// Control btnSumar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblContador;
+        protected global::System.Web.UI.WebControls.Button btnSumar;
 
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control btnAgregarCarrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btnAgregarCarrito;
     }
 }
