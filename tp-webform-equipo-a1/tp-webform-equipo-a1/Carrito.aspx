@@ -61,8 +61,8 @@
         </div>
         <% }
             else
-            {%><div class="row">
-                <div class="col-12">
+            {%><div class="row h-100">
+                <div class="col-12 text-center position-absolute top-50 start-50 translate-middle">
                     <h1>No hay Articulos en el carrito</h1>
                 </div>
             </div>

@@ -75,7 +75,7 @@ namespace tp_webform_equipo_a1
 
                 itemCarrito.Articulo = (Articulo)lstArticulo.Find(x => x.Id == Convert.ToInt32(IdArticulo));
                 itemCarrito.Cantidad = int.Parse(detalleCantidad.Text);
-                itemCarrito.SubTotal = itemCarrito.Articulo.Precio;
+                itemCarrito.SubTotal = itemCarrito.Articulo.Precio * itemCarrito.Cantidad;
 
                 carrito.Items.Add(itemCarrito);
 

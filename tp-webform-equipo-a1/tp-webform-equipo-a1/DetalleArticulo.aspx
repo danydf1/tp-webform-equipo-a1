@@ -67,7 +67,7 @@
                             <div class="input-group mb-3" style="width: 170px;">
                                 <asp:Button runat="server" Text="-" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnRestar" data-mdb-ripple-color="dark" OnClick="btnRestar_Click"/>
 
-                                <asp:TextBox runat="server" Text="1" CssClass="form-control text-center border border-secondary" aria-label="Example text with button addon" aria-describedby="button-addon1" ID="detalleCantidad" />
+                                <asp:TextBox runat="server" Text="1" ReadOnly="true" CssClass="form-control text-center border border-secondary" aria-label="Example text with button addon" aria-describedby="button-addon1" ID="detalleCantidad" />
                                 <asp:Button runat="server" Text="+" CssClass="btn btn-white border border-secondary px-3" type="button" ID="btnSumar" data-mdb-ripple-color="dark" OnClick="btnSumar_Click" />
                             </div>
                         </div>
