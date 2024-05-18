@@ -3,7 +3,14 @@
 }
 
 
- .txtCantidad{
-    width: 5% ;
+.txtCantidad {
+    width: 5%;
 }
 
+
+#imgDetallePrincipal {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
