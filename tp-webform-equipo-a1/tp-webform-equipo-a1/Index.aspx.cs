@@ -105,7 +105,7 @@ namespace tp_webform_equipo_a1
         {
             string buscar = txtSearch.Value;
 
-            lstArticulo = lstArticulo.FindAll(x => x.Nombre.Contains(buscar) || x.Descripcion.Contains(buscar) || x.Categoria.Descripcion.Contains(buscar) || x.Marca.Descripcion.Contains(buscar));
+            lstArticulo = lstArticulo.FindAll(x => x.Nombre.ToUpper().Contains(buscar.ToUpper()) || x.Descripcion.ToUpper().Contains(buscar.ToUpper()) || x.Categoria.Descripcion.ToUpper().Contains(buscar.ToUpper()) || x.Marca.Descripcion.ToUpper().Contains(buscar.ToUpper()));
 
             repetidor.DataSource = lstArticulo;
             repetidor.DataBind();
