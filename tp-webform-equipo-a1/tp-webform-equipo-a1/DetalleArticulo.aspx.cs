@@ -35,6 +35,11 @@ namespace tp_webform_equipo_a1
                 if (carrito.Items == null) carrito.Items = new List<ItemCarrito>();
             }
 
+            if (Request.QueryString["id"] == null)
+            {
+                Response.Redirect("Index.aspx");
+            }
+
             int id = int.Parse(Request.QueryString["id"]);
 
             articuloSeleccionado = lstArticulo.Find(art => art.Id == id);
