@@ -10,9 +10,5 @@ namespace Dominio
             return Descripcion;
         }
 
-        public override bool Equals(object obj)
-        {
-            return ((Marca)obj).Id == this.Id;
-        }
     }
 }

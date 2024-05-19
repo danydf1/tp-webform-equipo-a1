@@ -11,10 +11,5 @@ namespace Dominio
         {
             return Descripcion;
         }
-
-        public override bool Equals(object obj)
-        {
-            return ((Categoria)obj).Id==this.Id;
-        }
     }
 }

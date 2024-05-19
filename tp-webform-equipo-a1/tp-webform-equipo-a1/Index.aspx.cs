@@ -48,10 +48,10 @@ namespace tp_webform_equipo_a1
                 lstMarcas.Add(new Marca { Id = 0, Descripcion = "Todas" });
                 foreach (var item in lstArticulo)
                 {
-                    if (!lstCategorias.Contains(item.Categoria))
+                    if (!lstCategorias.Any(x=>x.Id==item.Categoria.Id))
                         lstCategorias.Add(item.Categoria);
 
-                    if (!lstMarcas.Contains(item.Marca))
+                    if (!lstMarcas.Any(x=>x.Id==item.Marca.Id))
                         lstMarcas.Add(item.Marca);
                 }
 
