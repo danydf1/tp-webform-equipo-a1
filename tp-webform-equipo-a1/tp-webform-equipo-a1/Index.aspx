@@ -70,8 +70,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title"><%# Eval("Nombre")%></h5>
-                                     <p class="card-text"><%# Eval("Marca.Descripcion")%></p>
-                                     <p class="card-text h5">$<%# Eval("Precio")%></p>
+                                    <p class="card-text"><%# Eval("Descripcion")%></p>
                                     <div class="row justify-content-evenly">
                                         <div class="col-4">
                                             <a href="/DetalleArticulo.aspx?id=<%# Eval("id") %>" class="btn btn-dark mr-3" />Detalle </a>
